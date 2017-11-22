@@ -39,7 +39,7 @@ h1,h2,h3 {
 }
 /*Startsidan */
 #hero {
-    background-image: url("images/oscarz.jpg");
+    background-image: url("oscarz.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -310,7 +310,7 @@ a .info-icon:hover{
 }
 
 #nominerade {
-    background: #020202 url("images/salong.jpg") no-repeat bottom;
+    background: #020202 url("salong.jpg") no-repeat bottom;
     background-size: 100% ;
     width: 100%;
     position: relative;
@@ -570,7 +570,7 @@ input[type="text"]:focus, input:focus{
 }
 
 #interview {
-    background: url("images/interview.png") no-repeat;
+    background: url("interview.png") no-repeat;
     background-size: cover;
     padding-bottom: 18%;
     background-position: center;
