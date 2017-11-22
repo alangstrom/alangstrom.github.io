@@ -1,0 +1,685 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3 {
+    /*font-family: 'Oswald', sans-serif; */
+    text-transform: uppercase;
+}
+
+.line {
+    width: 72px;
+    height: 1px;
+    background: #e1bb52;
+    margin: 0 auto 30px;
+}
+
+.rubrik{
+    font-weight: bold;
+    color: #e1bb52;
+}
+
+/* navbar */
+
+.navbar-inverse {
+    background-color: rgba(0,0,0,0.8);
+    border: none;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar-collapse>.navbar-nav>li.active>a{
+    background-color: rgba(0,0,0,0.7);
+}
+/*Startsidan */
+#hero {
+    background-image: url("images/oscarz.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 40px;
+    transition: height 1000000s;
+}
+
+.hero-title {
+    color: white;
+    position: absolute;
+    text-shadow: 0px 0px 10px black;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.hero-title img{
+    width: 620px;
+}
+
+.hero-title p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 30px;
+}
+
+#hero-button {
+    border-radius: 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-shadow: none;
+    display: inline-block;
+    padding: 15px 30px;
+    transition: all 0.2s;
+}
+
+#hero-button:focus {
+    text-decoration: none;
+}
+
+#hero-button:hover,.link-button:focus {
+    text-decoration: none;
+    color: white;
+    background: #e1bb52;
+    border-radius: 30px;
+    border-color: #e1bb52;
+}
+
+.scroll-icon {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.scroll-icon p{
+    text-align: center;
+    transform: rotate(90deg);
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
+    animation: scroll 0.6s linear infinite;
+    animation-play-state: paused;
+}
+
+.scroll-icon p:hover{
+    transition: all 0.2s ease-in-out;
+    animation-play-state: running;
+    opacity: 1;
+}
+
+@keyframes scroll {
+    50% {transform: translate(0px, 5px) rotate(90deg); }
+    100% {transform: translate(0px, 0px) rotate(90deg); }
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.link-button, input[type="submit"],.closeMotivation,.fileUpload,.link-button:focus, input[type="submit"]:focus {
+    color: #777;
+    text-shadow: none;
+    display: inline-block;
+    border: 2px solid #777;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    background: transparent;
+    margin: 0 10px 10px 10px;
+    cursor:pointer;
+}
+.link-button:hover, input[type="submit"]:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color:#e1bb52;
+    border-color: #e1bb52;
+}
+
+#inatt .link-button, #inatt .link-button:focus {
+    color: #f3f3f3;
+    border-color: #f3f3f3;
+}
+
+#inatt .link-button:hover{
+    color: #f3f3f3;
+    border-color: #e1bb52;
+}
+
+#cv-upload input[type="submit"],#anmalan input[type="submit"],.fileUpload{
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+}
+
+#cv-upload input[type="submit"]:hover, #cv-upload input[type="submit"]:focus,
+#anmalan input[type="submit"]:hover, #anmalan input[type="submit"]:focus,
+.closeMotivation:hover,.closeMotivation:focus,
+.fileUpload:hover,.fileUpload:focus
+{
+    text-decoration: none;
+    background: #202020;
+    border-color: #202020;
+    color: #fff;
+}
+
+/* */
+#idag,#inatt {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 40px 15px 80px 15px;
+    text-align: left;
+    color: #777;
+    line-height: 1.7em;
+    font-size: 18px;
+}
+
+#idag .buttons,#inatt .buttons {
+    text-align: center;
+}
+
+#idag h2, #inatt h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 38px;
+}
+
+@media (max-width: 667px){
+    #hero {
+        background-position: 11%;
+    }
+
+    #hero p {
+        font-size: 20px;
+    }
+
+    .hero-title img {
+        width: 345px;
+    }
+
+}
+
+@media (max-width: 375px){
+    #hero h1 {
+        font-size: 75px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    #idag, #inatt {
+        font-size: 15px;
+    }
+
+    #idag h2, #inatt h2 {
+        font-size: 30px;
+    }
+    .hero-title img {
+        width: 285px;
+    }
+}
+
+#inatt {
+    background-color: #202020;
+    color: #f3f3f3;
+}
+
+.event-info {
+    background: #333;
+    color: #fff;
+    min-height: 200px;
+    padding: 40px 0;
+    text-align: center;
+    text-shadow: 0px 0px 1px #8a6d3b;
+}
+
+.event-info h2, h1, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    text-transform: none;
+}
+
+.info-box{
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.info-icon{
+    width: 60px;
+    margin: 5px;
+}
+
+a .info-icon:hover{
+    filter: grayscale(1%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in;
+    opacity: 0.5;
+}
+
+@media (max-width: 425px){
+
+    .event-info {
+        padding: 30px 0;
+    }
+
+    .event-info h1, h2, h3, h4 {
+        font-size: 22px;
+    }
+
+    .info-box  {
+        margin-bottom: 20px;
+    }
+
+    .info-icon {
+        width: 42px;
+    }
+}
+
+#anmalan{
+    min-height: 50vh;
+}
+
+.table-wrap{
+    display: table;
+}
+
+.vertical-align{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#nominerade {
+    background: #020202 url("images/salong.jpg") no-repeat bottom;
+    background-size: 100% ;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 500px;
+}
+
+@media (max-width: 1024px){
+    #nominerade {
+        padding-bottom: 300px;
+    }
+}
+
+@media (max-width: 425px){
+    #nominerade {
+        padding-bottom: 170px;
+    }
+}
+
+#nominerade h4{
+    min-height: 50px;
+    margin-top: 8px;
+}
+
+#nominerad-rubrik {
+    padding: 15px 0;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 38px;
+}
+
+.openMotivation{
+    padding-top: 10px;
+    /*cursor: pointer;*/
+}
+
+/* Bilder till nominerde */
+.profile-image {
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-image:hover {
+    filter: grayscale(1%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    /*opacity: 0.8;*/
+}
+
+.shownom {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    overflow: auto;
+}
+
+.modal-wrap {
+    width:100%;
+    max-width: 400px;
+    background: #f3f3f3;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 100px auto;
+}
+
+.modal-wrap h2{
+    color: #777;
+}
+
+@media (max-width: 992px){
+    .modal-wrap {
+        margin: 0;
+        margin-top: 60px;
+    }
+}
+
+.modal-wrap textarea {
+    width: 90%;
+    max-width: 90%;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.modal-wrap .profile-image{
+    width: 50%;
+    padding-bottom: 50%;
+    margin: 10px auto;
+}
+
+.modal-wrap .profile-image:hover{
+    opacity: 1;
+}
+
+.modal-wrap:hover {
+    cursor:default;
+}
+
+#cv-upload, #anmalan {
+    text-align: center;
+    background-color:#CCB578;
+    color: white;
+    padding: 40px 0;
+}
+
+input[type="text"]{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+    text-shadow: none;
+    border: 2px solid #e1bb52;
+    padding: 10px 40px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    color: black;
+}
+
+input[type="text"]:focus, input:focus{
+    outline: none;
+    background: #eee;
+    transition: all 0.2s ease-in-out;
+}
+
+#cv input[type="text"]{
+    display: inline-block;
+}
+
+#cv {
+    align-content: center;
+}
+
+/*Företag*/
+#foretag {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 40px 0;
+    line-height: 1.6em;
+    font-size: 15px;
+}
+
+.section-rubrik {
+    padding: 15px 0;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    font-size: 38px;
+}
+
+@media (max-width: 375px){
+
+    #nominerad-rubrik {
+        font-size: 30px;
+    }
+
+    #foretag {
+        font-size: 14px;
+    }
+
+    .section-rubrik {
+        font-size: 30px;
+    }
+}
+
+.foretag-box {
+    min-height: 100px;
+    max-width: 100%;
+}
+
+.foretag-box p {
+    text-align: left;
+}
+
+.guld {
+    width: 400px;
+    max-width: 100%;
+}
+
+.silver {
+    max-height: 200px;
+    max-width: 100%;
+    padding: 30px 0px;
+}
+
+
+.brons{
+    text-align: center;
+
+}
+
+.brons img{
+    max-width: 160px;
+    max-height: 50px;
+    margin-top: 60px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 425px){
+    .brons img{
+        margin-top: 40px;
+    }
+}
+
+#foretag a:hover{
+    filter: grayscale(1%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+.fileUpload {
+    margin-top: 20px;
+}
+
+.fileUpload:hover {
+    color: #fff;
+}
+
+#nominerade .closeMotivation {
+    color: #fff;
+    border-color: #000;
+    background: #000;
+}
+
+
+#nominerade .closeMotivation:hover,.closeMotivation:focus {
+    color: #000;
+    border-color: #000;
+    background: transparent;
+}
+#nominerade input[type="submit"]{
+    color: #fff;
+    background-color: #e1bb52;
+    border-color: #e1bb52;
+}
+
+#nominerade input[type="submit"]:hover, [type="submit"]:focus{
+    text-decoration: none;
+    color: #e1bb52;
+    background-color: transparent;
+    border-color: #e1bb52;
+}
+
+#interview {
+    background: url("images/interview.png") no-repeat;
+    background-size: cover;
+    padding-bottom: 18%;
+    background-position: center;
+    position: relative;
+}
+
+#interview .color-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(197, 165, 76, 0.4);
+    left: 0;
+    top: 0;
+}
+
+
+/* Schema */
+
+#schema{
+    margin: 60px 0;
+    color: #777;
+}
+
+#schema ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 265px;
+}
+
+.schema-rubrik{
+    margin: 0 auto;
+    text-align: left;
+    width: 170px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.schema-line {
+    margin: 0 auto;
+    width: 200px;
+    background-color: #9d9d9d;
+}
+
+#schema span {
+    padding: 20px;
+    width: 170px;
+    display: inline-block;
+    margin:0 auto;
+    text-align: left;
+    font-weight: bold;
+}
+
+#schema time{
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    border-right: 2px solid #ccc;
+    min-width: 90px;
+    text-align: right;
+}
+
+#schema time:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #e1bb52;
+    display: block;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    right: -16px;
+    position: absolute;
+    background-color: #fff;
+}
+
+#schema time.rast:after {
+    border: 2px solid #ccc;
+}
+
+#schema .rast {
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #f5f5f5;
+    background-color: #000;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover, footer a:focus {
+    text-decoration: none;
+    color: #E1BB52;
+}
+
+#halvsoon {
+    position: fixed;
+    top: 22%;
+    z-index: 99999;
+    left: -65%;
+}
+
+#halvsoon img {
+    width: 200px;
+}

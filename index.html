@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IDag & Inatt 2016</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Arvid Långström, Jonas Halvarsson, Mattias Johansson, Emma Fahlman, Jane Bertheim">
+        <meta name="keywords" content="idag, inatt, 2016, interaktion, och, design">
+        <meta name="description" content="Hemsida för IDag och inatt 2016">
+
+        <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script><!-- Fonts -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Styles -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="animate.min.css" type="text/css">
+
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="60">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#hero">Hem</a></li>
+                        <li><a href="#idag">IDag</a></li>
+                        <li><a href="#inatt">Inatt</a></li>
+                        <li><a href="#schema">Schema</a></li>
+                        <li><a href="#anmalan">Anmälan</a></li>
+                        <li><a href="#nominerade">Årets ID:are</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="halvsoon">
+            <img src="halvsoon.png">
+        </div>
+        <section class="container-fluid" id="hero">
+            <div class="hero-title">
+                <img alt="Bilden kunde inte laddas" src="inatt-logo.png">
+                <h1 style="display: none">IDag & Inatt</h1>
+                <p>21 maj 2016 • ID firar 15 år!</p>
+                <a href="#anmalan" id="hero-button">
+                    Anmäl dig nu
+                </a>
+            </div>
+            @if(!$isMobile)
+                <a href="#idag">
+                    <div class="scroll-icon"><p>&#10095; &#10095;</p></div>
+                </a>
+            @endif
+        </section>
+
+        <section class="container-fluid" id="idag">
+            <div class="container" id="textidag">
+                <div class="col-md-8 col-md-offset-2 @if(!$isMobile) wow fadeIn @endif" data-wow-offset="150">
+                    <h2>Om <span class="rubrik">IDag</span></h2>
+                    <div class="line"></div>
+                    <p>IDag är en arbetsmarknadsdag bara för oss på interaktionsdesign,
+                        med inbjudna företag som är relevanta för oss. De berättar om vad de gör,
+                        vilka möjligheter som finns och gör det lättare för oss att se vår roll
+                        i det kommande arbetslivet. En alumn, det vill säga en före detta ID-student,
+                        kommer också och ger tips och berättar egna erfarenheter. Detta brukar vara
+                        inspirerande för såväl nya studenter som de lite äldre.
+                    </p>
+                    <br>
+                    <p>
+                        I år kommer IDag hållas på Sliperiet. Sliperiet är en tvärdisciplinär miljö för samverkan och experimenterande där forskning, undervisning och innovationer kan utvecklas.
+                        Miljön är levande och föränderlig, med en infrastruktur som skapas, omskapas och anpassas utifrån omvärlden och efter användarnas behöv.
+                        Här möter du forskare, studenter, entreprenörer och kreatörer i en stark innovationsmiljö, med verkstäder för experimenterade och idéutveckling. Sliperiet startar och stödjer nytänkande, samarbeten och nyttiggörande.
+                    </p>
+                    <br>
+                    <p>Det serveras också lunch och bjuds på fika under dagen
+                        som avslutas med en bankett med temat <span class="rubrik">Oscarsgalan</span>.
+                        För att få lunchen gratis måste du kunna visa att du är student.
+                        Alla vanliga studentlegitimationer gäller, t.ex Mecenat, Studentkortet eller registreringsintyg.
+                    </p>
+                    <br>
+                    <p>Årets officiella hashtaggar är <span class="rubrik">#IDagInatt16</span> och <span class="rubrik">#Sliperiet</span>.</p>
+                    <div class="buttons">
+                        <a href="#anmalan" class="link-button">
+                            Anmälan
+                        </a>
+                        <a href="#schema" class="link-button">
+                            Schema
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="event-info">
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <img alt="Bilden kunde inte laddas" class="info-icon" src="time.png">
+                        <h2>21 Maj, 8.15 (OBS! Ej 8.30)</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <a href="https://www.google.se/maps/place/Sliperiet/@63.8206512,20.275166,17z/data=!3m1!4b1!4m2!3m1!1s0x467c5b066d574471:0x3c132dfbfa054972">
+                            <img alt="Bilden kunde inte laddas" class="info-icon" src="location.png">
+                        </a>
+                        <h2>Sliperiet, Östra Strandgatan 32</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="foretag">
+            <div class="container @if(!$isMobile) wow fadeIn @endif" data-wow-offset="150">
+                <h2 class="section-rubrik">Företag</h2>
+                <div class="line"></div>
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="foretag-box">
+                        <a href="http://magicbyistone.se/">
+                            <img alt="Bilden kunde inte laddas" class="guld" src="magic.png">
+                        </a>
+                        <p>Magic är företags nya användbarhet- och designkompis. En polare som sätter gemensamma idéer
+                            i förarsätet för att skapa hållbara små saker som människor vill använda.</p>
+
+                        <p>Det internationella it-konsultbolaget iStone har inför 2015 rekryterat en hel liten byrå för
+                            att skapa en ny tjänst vi tycker är lite magisk. Man kan kalla det idébyrå, formochfunktionbyrå,
+                            dialogbyrå eller interaktionsbyrå. Vi kallar det magic, och ser till att göra den digitala
+                            dimensionen greppbar. Vi gör saker som känns relevanta, funkar, och ser bra ut.</p>
+
+                        <p>Kort och gott kan man säga att vi kopplar samman människor med teknik. Vi omdefinierar värderingar
+                            och krav för att skapa användbarhet och känslor. Våra fyra enkla erbjudanden reflekterar hur
+                            vi tänker – Vi Analyserar, skräddarsyr, guidar och injicerar idéer där det behövs. Och med
+                            våra 600 expertkompisar inom iStone ser vi också till att det fungerar.</p>
+                    </div>
+                </div>
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="foretag-box">
+                                <a href="http://doberman.se">
+                                    <img alt="Bilden kunde inte laddas" class="silver" src="doberman.png">
+                                </a>
+                                <p>Doberman was founded almost two decades ago. Today, we are a leading design firm based in
+                                    Stockholm, New York and at our think tank studio in Berlin.
+                                    We are working with clients from different fields such as public service, games, retail,
+                                    startups and the public sector (and many more!) and the cornerstones of our internal
+                                    values are participation, inclusion and a tireless dedication to talent.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="foretag-box">
+                                <a href="http://screeninteraction.com">
+                                    <img alt="Bilden kunde inte laddas" class="silver" src="screeninteraction.png">
+                                </a>
+                                <p>Screen Interaction is a digital innovation agency founded by a team of four Interaction
+                                    Designers in 2008. Their common philosophy was that digital services and products
+                                    should always be based on an excellent user experience. Now Screen Interaction is
+                                    creating innovative solutions that affect people’s daily lives and transform
+                                    businesses in a fast changing world.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="foretag-box brons">
+                                <a href="http://poolia.se">
+                                    <img alt="Bilden kunde inte laddas" src="Poolia.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="foretag-box brons">
+                                <a href="http://codemill.se">
+                                    <img alt="Bilden kunde inte laddas" src="codemill.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="foretag-box brons">
+                                <a href="http://sliperiet.umu.se">
+                                    <img alt="Bilden kunde inte laddas" src="sliperiet.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="foretag-box brons">
+                                <a href="http://coop.se">
+                                    <img alt="Bilden kunde inte laddas" src="coop.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cv-upload" class="container-fluid">
+            <div class="container">
+
+                <div id="cv" class="col-md-8 col-md-offset-2">
+                    <h2>Vill du ha ett kontaktsamtal med magic?</h2>
+                    <h3>Anmälan är stängd.</h3>
+                    <noscript>Du måste ha Javascript för att se vilken fil du valt. (Uppladdning fungerar ändå)</noscript>
+                </div>
+            </div>
+        </section>
+        <div id="interview" class="container-fluid">
+            <div class="color-overlay">
+            </div>
+        </div>
+
+        <section class="container-fluid" id="inatt">
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2 @if(!$isMobile) wow fadeIn @endif" data-wow-offset="150">
+                    <h2>Om <span class="rubrik">Inatt</span> </h2>
+                    <div class="line"></div>
+                    <p>Kvällens bankett kallas för Inatt och hålls i år på REX.
+                        Där bjuds det på trerätters middag, underhållning och tal från bland annat
+                        årets ID-are i fina lokaler. Efter detta fortsätter festen fram till stängning.
+                        Biljetterna är dessutom kraftigt subventionerade för oss studerande på programmet.
+                        Klädkod för kvällen är mörk kostym för herrar och långklänning för damer.</p>
+                    <br>
+                    <p>För endast 350kr blir du bjuden på fördrink, en utsökt trerätters middag,
+                        dryck till maten samt inträde på REX. Biljetter till denna
+                        fantastiska kväll kommer säljas i Mitum
+                        den <span class="rubrik">3-4 Maj</span>, kl. 12-13. Både kontanter och swish accepteras.
+                        Observera att man bara kan betala på plats.</p>
+                    <br>
+                    <p>Årets officiella hashtaggar är <span class="rubrik">#IDagInatt16</span> och <span class="rubrik">#Sliperiet</span>.</p>
+                    <div class="buttons">
+                        <a href="#schema" class="link-button">
+                            Schema
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-info">
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <img alt="Bilden kunde inte laddas" class="info-icon" src="time.png">
+                        <h2>21 Maj, 17.30</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <a href="https://www.google.se/maps/place/Rex+Brasserie/@63.825287,20.2603072,17z/data=!3m1!4b1!4m2!3m1!1s0x467c5b0c2c62de89:0x83235179487f877e">
+                            <img alt="Bilden kunde inte laddas" class="info-icon" src="location.png">
+                        </a>
+                        <h2>Rex, Rådhustorget 1</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schema">
+            <div class="container-fluid">
+
+                <div class="container">
+                    <h2 class="section-rubrik">Schema</h2>
+                    <div class="line"></div>
+                    <div class="col-md-6">
+                        <h2 class="schema-rubrik">IDag, Sliperiet</h2>
+                        <div class="line schema-line"></div>
+                        <ul>
+                            <li>
+                                <time class="rast">
+                                    08:15
+                                </time>
+                                <span class="rast">
+                                    Frukost
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    08:45
+                                </time>
+                                <span>
+                                    Poolia
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    09:00
+                                </time>
+                                <span>
+                                    Magic
+                                </span>
+                            </li>
+                            <li>
+                                <time class="rast">
+                                    10:00
+                                </time>
+                                <span class="rast">
+                                    Fika
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    10:15
+                                </time>
+                                <span>
+                                    Screen Interaction
+                                </span>
+                            </li>
+                            <li>
+                                <time class="rast">
+                                    11:15
+                                </time>
+                                <span class="rast">
+                                    Lunch
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    12:15
+                                </time>
+                                <span>
+                                    Årets ID:are
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    12:30
+                                </time>
+                                <span>
+                                    Doberman
+                                </span>
+                            </li>
+                            <li>
+                                <time class="rast">
+                                    13:30
+                                </time>
+                                <span class="rast">
+                                    Fika
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    13:45
+                                </time>
+                                <span>
+                                    Oscar Bornemark
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    14:30
+                                </time>
+                                <span>
+                                    Avslutning
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="schema-rubrik">Inatt, Rex</h2>
+                        <div class="line schema-line"></div>
+                        <ul>
+                            <li>
+                                <time>
+                                    17:30
+                                </time>
+                                <span>
+                                    Fördrink
+                                </span>
+                            </li>
+                            <li>
+                                <time class="rast">
+                                    17:45
+                                </time>
+                                <span class="rast">
+                                    Fotografering ID15
+                                </span>
+                            </li>
+                            <li>
+                                <time class="rast">
+                                    18:00
+                                </time>
+                                <span class="rast">
+                                    Fotografering ID14
+                                </span>
+                            </li>
+                            <li>
+                                <time class="rast">
+                                    18:15
+                                </time>
+                                <span class="rast">
+                                    Fotografering ID13
+                                </span>
+                            </li>
+                            <li>
+                                <time class="rast">
+                                    18:30
+                                </time>
+                                <span class="rast">
+                                    Fotografering ID12
+                                </span>
+                            </li>
+                            <li>
+                                <time class="rast">
+                                    18:45
+                                </time>
+                                <span class="rast">
+                                    Fotografering ID11
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    18:50
+                                </time>
+                                <span>
+                                    Samling i stora salen
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    19:15
+                                </time>
+                                <span>
+                                    Förrätt
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    20:00
+                                </time>
+                                <span>
+                                    Huvudrätt
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    20:45
+                                </time>
+                                <span>
+                                    Efterrätt
+                                </span>
+                            </li>
+                            <li>
+                                <time>
+                                    21:30
+                                </time>
+                                <span>
+                                    PARTY!
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="anmalan" class="@if(!$isMobile) wow fadeInUp @endif">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Anmälan till IDag</h2>
+                        <h3>Anmälan är stängd.</h3><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" id="nominerade">
+            <h2 id="nominerad-rubrik">Rösta på årets ID:are</h2>
+            <div class="line"></div>
+            <noscript>Du måste aktivera Javascript för att rösta.</noscript>
+            <div class="container">
+                
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("clooney.jpg")'></div>
+                            <h4>John Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("girl.jpg")'></div>
+                            <h4>Jane Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("clooney.jpg")'></div>
+                            <h4>John Dough</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("images/nominees/clooney.jpg")'></div>
+                            <h4>John Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("images/nominees/girl.jpg")'></div>
+                            <h4>Jane Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("girl.jpg")'></div>
+                            <h4>Jane Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("clooney.jpg")'></div>
+                            <h4>John Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("girl.jpg")'></div>
+                            <h4>Jane Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("clooney.jpg")'></div>
+                            <h4>John Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("girl.jpg")'></div>
+                            <h4>Jane Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("clooney.jpg")'></div>
+                            <h4>John Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 wow fadeIn @endif" data-wow-offset="175">
+                        <div id="openM{{$n->id}}" class="openMotivation">
+                            <div class="profile-image" style='background-image: url("girl.jpg")'></div>
+                            <h4>Jane Doe</h4>
+
+                            <div id="" class="shownom" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Copyright © 2016 Interaktion & Design @ Umeå Universitet.<br>Vid frågor kontakta
+                <a target="_top" href="mailto:projektledareidaginatt@gmail.com">projektledareidaginatt@gmail.com</a>.</p>
+        </footer>
+
+        <script src="wow.min.js" type="text/javascript"></script>
+        <script src="script.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
